@@ -5,6 +5,7 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.4.1
+    api-approved.kubernetes.io: "https://github.io/kou164nkn/foo-controller"
   creationTimestamp: null
   name: foos.samplecontroller.k8s.io
 spec:
