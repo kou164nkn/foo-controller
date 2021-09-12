@@ -39,8 +39,8 @@ type FooReconciler struct {
 	Recorder record.EventRecorder
 }
 
-// +kubebuilder:rbac:groups=samplecontroller.k8s.io,resources=foos,verbs=get;list;watch;create;update;patch;delete
-// +kubebuilder:rbac:groups=samplecontroller.k8s.io,resources=foos/status,verbs=get;update;patch
+// +kubebuilder:rbac:groups=samplecontroller.example.com,resources=foos,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups=samplecontroller.example.com,resources=foos/status,verbs=get;update;patch
 // +kubebuilder:rbac:groups=apps,resources=deployments,verbs=get;list;watch;create;update;delete
 // +kubebuilder:rbac:groups="",resources=events,verbs=create;patch
 

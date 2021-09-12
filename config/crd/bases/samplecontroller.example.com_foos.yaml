@@ -5,11 +5,10 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.4.1
-    api-approved.kubernetes.io: "https://github.io/kou164nkn/foo-controller"
   creationTimestamp: null
-  name: foos.samplecontroller.k8s.io
+  name: foos.samplecontroller.example.com
 spec:
-  group: samplecontroller.k8s.io
+  group: samplecontroller.example.com
   names:
     kind: Foo
     listKind: FooList
