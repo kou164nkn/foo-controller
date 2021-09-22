@@ -54,7 +54,6 @@ type FooReconciler struct {
 // For more details, check Reconcile and its Result here:
 // - https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.8.3/pkg/reconcile
 func (r *FooReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
-	ctx = context.Background()
 	log := r.Log.WithValues("foo", req.NamespacedName)
 
 	var foo samplecontrollerv1alpha1.Foo
